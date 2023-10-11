@@ -1,21 +1,21 @@
-:root{
---text:rgb(255, 255, 255);
---url: url(./assets/bg-mobile.jpg);
---border: rgba(235, 235, 235, 0.5);
---stroke: rgba(49, 152, 140, 0.5);
---background: rgba(79, 59, 158, 0.88);
---switch-bg-url: url(./assets/noite.svg);
---bordername: rgba(17, 19, 51, 0.96);
+:root {
+  --text: rgb(255, 255, 255);
+  --url: url(./assets/bg-mobile.jpg);
+  --border: rgba(235, 235, 235, 0.5);
+  --stroke: rgba(49, 152, 140, 0.5);
+  --background: rgba(79, 59, 158, 0.88);
+  --switch-bg-url: url(./assets/noite.svg);
+  --bordername: rgba(17, 19, 51, 0.96);
 }
 
-.light{ 
---text: rgb(0, 0, 0);
---url: url(./assets/bg-mobile-light.jpg);
---border: rgb(194, 80, 196);
---stroke: rgb(98, 255, 0);
---background: rgba(198, 149, 254, 0.892);
---switch-bg-url: url(./assets/dia.svg);
---bordername: rgba(198, 149, 254, 0.892);
+.light {
+  --text: rgb(0, 0, 0);
+  --url: url(./assets/bg-mobile-light.jpg);
+  --border: rgb(194, 80, 196);
+  --stroke: rgb(98, 255, 0);
+  --background: rgba(198, 149, 254, 0.892);
+  --switch-bg-url: url(./assets/dia.svg);
+  --bordername: rgba(198, 149, 254, 0.892);
 }
 
 * {
@@ -31,24 +31,23 @@ body * {
 
 body {
   background: var(--url) no-repeat top center/cover;
-}  
+}
 
 #name {
   height: 8px;
   padding: 15% center;
-  display: flex;  
+  display: flex;
   align-items: center;
   justify-content: center;
-  border: 25px solid var(--bordername); 
+  border: 25px solid var(--bordername);
   border-radius: 9999px;
-
 }
 
 #container {
   width: 380px;
   /*border: 30px solid rgba(12, 222, 212, 0.886);*/
   margin: 56px auto 0px;
-  padding:0 24px;
+  padding: 0 24px;
 }
 
 #profile {
@@ -56,7 +55,7 @@ body {
 }
 
 #profile img {
-  border: 5px solid var(--bordername); 
+  border: 5px solid var(--bordername);
   border-radius: 9999px;
   width: 115px;
 }
@@ -67,13 +66,13 @@ body {
 }
 
 #switch {
-width: 64px;
-height: auto;
-position: relative;
-margin: 4px auto;
+  width: 64px;
+  height: auto;
+  position: relative;
+  margin: 4px auto;
 }
 
-#switch button{
+#switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
@@ -91,15 +90,15 @@ margin: 4px auto;
   right: 0;
   left: initial;
 }
- 
+
 #switch span {
-display: block;
-width: 64px;
-height: 24px;
-background:var(--background);
-border: 1px solid var(--border);
--webkit-backdrop-filter: blur(4px) ; 
-border-radius: 9999px;
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--background);
+  border: 1px solid var(--border);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
 
 /*LISTAS*/
@@ -110,7 +109,7 @@ ul {
   flex-direction: column;
   gap: 16px;
 
-  padding: 24px 0 ;
+  padding: 24px 0;
 }
 
 ul li a {
@@ -132,46 +131,42 @@ ul li a {
   font-weight: 500;
 
   transition: backgroud 0.2s;
-
 }
 
 /*pseudo selector*/
 
 ul li a:houver {
   background: rgba(255, 255, 255, 00.5);
-  border: 1,5px solid white);
+  border: 1, 5px solid white;
   color: var(--text);
 }
 
-#social{
-display: flex;
-justify-content: center;
+#social {
+  display: flex;
+  justify-content: center;
 
-padding: 24px 0;
-font-size: 24px;
+  padding: 24px 0;
+  font-size: 24px;
 }
 
 #social a {
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 16px;
-transition: backgraund 0.2s;
-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  transition: backgraund 0.2s;
+  border-radius: 50%;
 }
 
-#social a:hover{
-background: rgba(255, 255, 255, 0.2) ;
-padding: 16px;
-
+#social a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 16px;
 }
 
 footer {
   padding: 24px 0;
   text-align: center;
 }
-
-
 
 /*COMENTÁRIOS EM CSS*/
 
